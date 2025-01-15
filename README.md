@@ -1,6 +1,37 @@
-| Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C5 | ESP32-C6 | ESP32-C61 | ESP32-H2 | ESP32-P4 | ESP32-S2 | ESP32-S3 | Linux |
-| ----------------- | ----- | -------- | -------- | -------- | -------- | --------- | -------- | -------- | -------- | -------- | ----- |
+# TempLightFlow
 
-# TEMPLIGHTFLOW Example
+O **TempLightFlow** é um projeto desenvolvido para ESP32 utilizando ESP-IDF. O objetivo é ler dados do sensor de temperatura e umidade DHT11 e controlar LEDs RGB com base nos dados recebidos. Além disso, o projeto inclui testes unitários utilizando a biblioteca Criterion.h e automatização de build e entrega utilizando GitHub Actions.
 
-Leitura DHT11, Controle LED RGB e uso de workflow github Actions
+## Funcionalidades
+
+- Leitura de temperatura e umidade do sensor DHT11.
+- Controle de LEDs RGB com base na leitura de temperatura.
+- Testes automatizados utilizando a biblioteca **Criterion.h**.
+- Automação de build, testes e entrega utilizando GitHub Actions.
+
+## Requisitos
+
+- ESP32 (Franzininho Wifi Lab).
+- Sensor DHT11.
+- LEDs RGB.
+- Ambiente de desenvolvimento com ESP-IDF configurado.
+
+## Workflow do GitHub Actions
+
+O workflow do GitHub Actions, denominado `TempLightFlow`, é composto por três jobs:
+
+1. **Build**:
+    - Compila o projeto utilizando o ESP-IDF.
+    - Armazena o artefato gerado no processo de compilação.
+   
+2. **Test**:
+    - Compila e executa os testes unitários.
+    - Publica os resultados dos testes no formato XML.
+   
+3. **Delivery**:
+    - Baixa os artefatos gerados.
+    - Cria uma nova release com o artefato compilado.
+
+## Licença
+
+Este projeto está licenciado sob a MIT License.
