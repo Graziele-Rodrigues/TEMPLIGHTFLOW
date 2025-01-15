@@ -68,4 +68,3 @@ jobs: # define os Jobs que serão executados no workflow
         with:
           artifacts: "TempLightFlow.bin" # artefato que será criado na release
           tag: 0.1.5 # tag do release
-          bodyFile: "body.md" #Arquivo contendo o corpo do release
