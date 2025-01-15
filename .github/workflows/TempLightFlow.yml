@@ -1,4 +1,4 @@
-name: ci-cd #nome workflow
+name: TempLightFlow #nome workflow
 on:
   pull_request:
     branches:
@@ -22,8 +22,8 @@ jobs: # define os Jobs que serão executados no workflow
       - name: Store Artifacts 
         uses: actions/upload-artifact@v4 #Armazena os artefatos gerados pela compilação
         with:
-          name: ci-cd # especifica o nome do artefato criado
-          path: build/ci-cd.bin
+          name: TempLightFlow # especifica o nome do artefato criado
+          path: build/TempLightFlow.bin
 
   test: # job responsável por compilar os testes unitários e gerar os artefatos relacionados
     runs-on: ubuntu-latest
@@ -61,11 +61,11 @@ jobs: # define os Jobs que serão executados no workflow
       - name: Download artifacts
         uses: actions/download-artifact@v4 # baixa os artefatos gerados no job "build"
         with:
-          name: ci-cd
+          name: TempLightFlow
 
       - name: Create release
         uses: ncipollo/release-action@v1.13.0 # action para criar release
         with:
-          artifacts: "ci-cd.bin" # artefato que será criado na release
+          artifacts: "TempLightFlow.bin" # artefato que será criado na release
           tag: 0.1.5 # tag do release
           bodyFile: "body.md" #Arquivo contendo o corpo do release
