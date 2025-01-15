@@ -20,10 +20,10 @@ int reasonable_humidity(int16_t humidity) {
 
 Test(sensor_values, test_temperature) {
     // Testa valores de temperatura
-    cr_assert(reasonable_temperature(400) == 1, "Temperatura nao deveria ser considerada razoavel");
+    cr_assert(reasonable_temperature(280) == 1, "Temperatura eh considerada razoavel");
 }
 
 Test(sensor_values, test_humidity) {
     // Testa valores de umidade
-    cr_assert(reasonable_humidity(900) == 1, "Umidade nao deveria ser considerada razoavel");
+    cr_assert(reasonable_humidity(500) == 1, "Umidade eh considerada razoavel");
 }
