@@ -1,0 +1,11 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPathWin": "C:\\Users\\grazi\\esp\\v5.4\\esp-idf",
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp32_devkitj_v1.cfg",
+        "target/esp32s2.cfg"
+    ],
+    "idf.toolsPathWin": "C:\\Users\\grazi\\.espressif",
+    "idf.portWin": "COM4",
+    "idf.flashType": "UART"
+}
