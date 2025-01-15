@@ -32,6 +32,3 @@ O workflow do GitHub Actions, denominado `TempLightFlow`, é composto por três 
     - Baixa os artefatos gerados.
     - Cria uma nova release com o artefato compilado.
 
-## Licença
-
-Este projeto está licenciado sob a MIT License.
