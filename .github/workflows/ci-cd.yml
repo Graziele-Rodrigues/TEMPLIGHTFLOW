@@ -1,8 +1,9 @@
 name: ci-cd #nome workflow
-on: 
+on:
   pull_request:
     branches:
       - main # executa quando tiver uma pull request no repositório
+
 jobs: # define os Jobs que serão executados no workflow
   build: # job compilação projeto
     runs-on: ubuntu-latest # usar última versão da distribuição Ubuntu
