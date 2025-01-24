@@ -72,3 +72,4 @@ jobs: # define os Jobs que serão executados no workflow
         with:
           artifacts: "TempLightFlow.bin"
           tag: ${{ env.tag }}
+          make_latest: true
