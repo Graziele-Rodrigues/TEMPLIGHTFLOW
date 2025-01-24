@@ -62,9 +62,13 @@ jobs: # define os Jobs que serão executados no workflow
         uses: actions/download-artifact@v4 # baixa os artefatos gerados no job "build"
         with:
           name: TempLightFlow
+      
+      - name: Generate dynamic tag  #gerar tag dinamicamente
+        id: generate_tag
+        run: echo "tag=v$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
 
-      - name: Create release
-        uses: ncipollo/release-action@v1.13.0 # action para criar release
+       - name: Create release
+        uses: ncipollo/release-action@v1.13.0 #action criar release
         with:
-          artifacts: "TempLightFlow.bin" # artefato que será criado na release
-          tag: 0.1.5 # tag do release
+          artifacts: "TempLightFlow.bin"
+          tag: ${{ env.tag }}

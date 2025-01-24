@@ -211,13 +211,13 @@ void update_leds(int16_t temperature) {
     // Acende o LED correspondente
     if (temperature > TEMP_HIGH) {
         gpio_set_level(LED_RED, 1);
-        //ESP_LOGI(TAG, "Temperatura alta!");
+        ESP_LOGI(TAG, "Temperatura alta!");
     } else if (temperature > TEMP_LOW) {
         gpio_set_level(LED_GREEN, 1);
-        //ESP_LOGI(TAG, "Temperatura ok!");
+        ESP_LOGI(TAG, "Temperatura ok!");
     } else {
         gpio_set_level(LED_BLUE, 1);
-        //ESP_LOGI(TAG, "Temperatura baixa!");
+        ESP_LOGI(TAG, "Temperatura baixa!");
 
     }
 }

@@ -8,6 +8,7 @@ O **TempLightFlow** é um projeto desenvolvido para ESP32 utilizando ESP-IDF. O 
 - Controle de LEDs RGB com base na leitura de temperatura.
 - Testes automatizados utilizando a biblioteca **Criterion.h**.
 - Automação de build, testes e entrega utilizando GitHub Actions.
+- Atualização por OTA, ao pressionar botao verifica a release mais recente
 
 ## Requisitos
 
