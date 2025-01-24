@@ -3,6 +3,12 @@ dependencies:
     source:
       type: idf
     version: 5.4.0
+  protocol_examples_common:
+    dependencies: []
+    source:
+      path: C:\Users\grazi\esp\v5.4\esp-idf\examples\common_components\protocol_examples_common
+      type: local
+    version: '*'
   zorxx/dht:
     component_hash: 6a5e699b15509d99b90352694e23beb6646855486eb3bafefd1d50058d474e98
     dependencies: []
@@ -12,7 +18,8 @@ dependencies:
     version: 1.0.1
 direct_dependencies:
 - idf
+- protocol_examples_common
 - zorxx/dht
-manifest_hash: 4f2d26a80e16b43a4eeb3ac84a24986536ce482a73a26610039d6afbb5214f2c
+manifest_hash: e2f28e1ef19eb570c347242ff33b987cff635bdb0879c61038044e477007204d
 target: esp32s2
 version: 2.0.0
